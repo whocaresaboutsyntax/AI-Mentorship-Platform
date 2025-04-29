@@ -1,39 +1,36 @@
-package com.example.aimentorship;
-
+package com.example.ainotegenerator;
+import java.io.IOException;
 import java.util.Scanner;
 
-import java.io.IOException;
-
-
 public class Main {
-    private static final String[] MENTORSHIP_KEYWORDS = {"mentorship", "career", "college", "job", "guidance", "advice"};
-
     public static void main(String[] args) {
         String apiKey = "AIzaSyARLyJKPqz9ifFSuD8S_BJhPGWZRJhEoyc"; // Replace with your actual API key
-        GeminiAPIClient geminiClient = new GeminiAPIClient(apiKey);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the AI Mentorship Platform!");
+        System.out.println("Welcome to the AI Note Generator!");
+
+        // Prompt user to input the transcript
+        System.out.println("\nPlease enter the transcript (end input with an empty line):");
+        StringBuilder transcriptBuilder = new StringBuilder();
+        String line;
+        while (!(line = scanner.nextLine()).isEmpty()) {
+            transcriptBuilder.append(line).append("\n");
+        }
+        String transcript = transcriptBuilder.toString().trim();
+
+        GeminiApiClient geminiClient = new GeminiApiClient(apiKey);
 
         while (true) {
-            System.out.print("\nEnter your mentorship domain (college/career/job) or 'exit' to quit: ");
-            String domain = scanner.nextLine().trim();
-            if (domain.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the AI Mentorship Platform. Goodbye!");
+            System.out.print("\nEnter your question (or type 'exit' to quit): ");
+            String question = scanner.nextLine().trim();
+            if (question.equalsIgnoreCase("exit")) {
+                System.out.println("Exiting the AI Note Generator. Goodbye!");
                 break;
             }
 
-            System.out.print("Enter your question: ");
-            String question = scanner.nextLine().trim();
-
-            if (!isMentorshipQuestion(question)) {
-                System.out.println("Sorry, I can only assist with mentorship-related questions.");
-                continue;
-            }
-
             try {
-                String guidance = geminiClient.getResponse(question, domain);
-                System.out.println("\nAI Mentor's Guidance:\n" + guidance);
+                String response = geminiClient.getResponse(question, transcript);
+                System.out.println("\nAI Response:\n" + response);
             } catch (IOException e) {
                 System.err.println("Error communicating with Gemini API: " + e.getMessage());
             }
@@ -41,15 +38,4 @@ public class Main {
 
         scanner.close();
     }
-
-    private static boolean isMentorshipQuestion(String question) {
-        String lowerCaseQuestion = question.toLowerCase();
-        for (String keyword : MENTORSHIP_KEYWORDS) {
-            if (lowerCaseQuestion.contains(keyword)) {
-                return true;
-            }
-        }
-        return false;
-    }
 }
-

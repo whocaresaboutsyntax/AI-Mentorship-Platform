@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0403f70-dd68-4c42-a49a-780b79cde29d" name="Changes" comment="" />
+    <list default="true" id="d1e03462-94a3-4ee6-9bbd-b0ab9ed21663" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,18 +13,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2vgYS48ne0GXLmOEFdQbCvB34Fl" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2wOPB8blLHbdKk6mTMTYYA4YvYP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,7 +29,6 @@
   "keyToString": {
     "Application.Run.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/SAMPURNA BOSE/IdeaProjects/AI Mentorship Platform",
     "node.js.detected.package.eslint": "true",
@@ -41,29 +36,22 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.ainotegenerator" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Run" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.example.aimentorship.Main" />
-      <module name="ai-mentorship-platform" />
+      <option name="MAIN_CLASS_NAME" value="com.example.ainotegenerator.Main" />
+      <module name="ai-note-generator" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -77,14 +65,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0403f70-dd68-4c42-a49a-780b79cde29d" name="Changes" comment="" />
-      <created>1744607041637</created>
+      <changelist id="d1e03462-94a3-4ee6-9bbd-b0ab9ed21663" name="Changes" comment="" />
+      <created>1745909514984</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1744607041637</updated>
-      <workItem from="1744607043865" duration="7643000" />
-      <workItem from="1744657010040" duration="2989000" />
-      <workItem from="1744703636645" duration="1566000" />
+      <updated>1745909514984</updated>
+      <workItem from="1745909516416" duration="3723000" />
     </task>
     <servers />
   </component>
